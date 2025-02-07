@@ -12,6 +12,7 @@
     @foreach ( $posts as $post )
     
     <p>{{$post->user->name}}</p>
+    <p>{{$post->user->email}}</p>
     @endforeach
     <form action="/logout" method="POST">
         @csrf
